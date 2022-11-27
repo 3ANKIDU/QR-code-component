@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --white:hsl(0, 0%, 100%);
+    --light--gray: hsl(212, 45%, 89%);
+    --grayish--blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --Outfit: 'Outfit', sans-serif;
+}
+
+/* resting all the margin & padding */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+/* typography */
+
+h1,p{
+    font-family: var(--Outfit);
+}
+
+h1{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--dark-blue);
+    margin-bottom: 1em;
+}
+
+p{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grayish--blue);
+}
+
+/* layout styling */
+
+body{
+    background-color: var(--light--gray);
+}
+
+#card{
+    background-color: var(--light--gray);
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    background-color: var(--white);
+    max-width: 20em;
+    margin: 5em 2em;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.box-shadow{
+    box-shadow: .5em .5em 3em var(--grayish--blue);
+}
+
+img{
+    height: 15em;
+    border-radius: 1em;
+    margin-bottom: .5em;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 481px) {
+    body{
+        background-color: var(--white);
+        padding: 5em 0;
+    }
+}
+@media only screen and (min-width: 769px) {
+    #card{
+        max-width: 70em;
+        margin: 0 auto;
+    }
+}
